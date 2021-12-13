@@ -14,10 +14,10 @@ password = ""
 session = Session(username,password,base_url)
 assert(session.authentication_status==200)
 
-r = session.account_endpoint()
+r = session.account()
 assert(r.status_code==200)
 
-r = session.applications_endpoint()
+r = session.all_applications()
 assert(r.status_code==200)
 
 ####################################################

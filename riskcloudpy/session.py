@@ -76,8 +76,8 @@ class Session:
 
         self.authentication_status = r.status_code
 
-    def account_endpoint(self):
+    def account(self):
         return self.session.get(self.base_url + '/api/v1/account/')
 
-    def applications_endpoint(self):
+    def all_applications(self):
         return self.session.get(self.base_url + '/api/v1/applications')
