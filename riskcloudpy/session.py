@@ -79,5 +79,5 @@ class Session:
     def account(self):
         return self.session.get(self.base_url + '/api/v1/account/')
 
-    def all_applications(self):
+    def applications(self):
         return self.session.get(self.base_url + '/api/v1/applications')
